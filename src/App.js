@@ -7,7 +7,7 @@ import JSON from "./test";
 function App() {
   const [users, setUsers] = useState(JSON);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(5);
+  const [postsPerPage] = useState(10);
 
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
