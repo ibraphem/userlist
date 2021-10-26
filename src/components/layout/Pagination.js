@@ -10,11 +10,13 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   }
 
   return (
-    <div className="pagination">
+    <div className="parentContainer">
       {pageNumbers.map((number) => (
-        <a onClick={() => paginate(number)} href="!#">
-          {number}
-        </a>
+        <div className="pagination">
+          <a onClick={() => paginate(number)} href="!#">
+            {number}
+          </a>
+        </div>
       ))}
     </div>
   );
